@@ -1,4 +1,4 @@
-```markdown
+
 # 🦙 Fine-Tuning LLaMA 3.2 (1B) with Traditional, LoRA, and QLoRA Approaches
 
 Welcome! This repository offers streamlined workflows and implementations for fine-tuning Meta's LLaMA 3.2 (1B) model. Here, we explore three fine-tuning techniques: **Traditional**, **LoRA** (Low-Rank Adaptation), and **QLoRA** (Quantized LoRA), each catering to different needs and resource constraints.
