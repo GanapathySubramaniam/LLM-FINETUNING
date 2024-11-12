@@ -7,7 +7,7 @@ Welcome! This repository offers streamlined workflows and implementations for fi
 
 ## 📌 Overview
 
-1. **Traditional Fine-Tuning**  
+1. **Traditional Fine-Tuning**  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1NiQp9lOsfmDV92urmzmBTTAxcs7ZiR8k?usp=sharing)
    A comprehensive adjustment of the entire model, adjusting all layers for maximum customization at the cost of higher computational load and memory.
 2. **LoRA (Low-Rank Adaptation)**  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1xCWY-606IK1cK8-MoJTgvpXn00u4AJ8d?usp=sharing)
    A more efficient technique that only modifies low-rank matrices within certain layers, conserving memory and accelerating the fine-tuning process without sacrificing much accuracy.
