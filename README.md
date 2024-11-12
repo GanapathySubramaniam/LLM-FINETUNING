@@ -11,7 +11,7 @@ Welcome! This repository offers streamlined workflows and implementations for fi
    A comprehensive adjustment of the entire model, adjusting all layers for maximum customization at the cost of higher computational load and memory.
 2. **LoRA (Low-Rank Adaptation)**  
    A more efficient technique that only modifies low-rank matrices within certain layers, conserving memory and accelerating the fine-tuning process without sacrificing much accuracy.
-3. **QLoRA (Quantized LoRA)**  
+3. **QLoRA (Quantized LoRA)**  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1K94mh-gPoXaCukgthPfNDa3ZgIr-qGZP?usp=sharing)
    A hybrid of quantization and LoRA, this technique achieves lower memory usage and faster processing by quantizing the model while applying low-rank adaptations. Ideal for resource-constrained environments.
 
 ---
