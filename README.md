@@ -1,23 +1,28 @@
+# 🦙 Fine-Tuning LLaMA 3.2 (1B) with Traditional, LoRA, and QLoRA Approaches
 
-🦙 Fine-Tuning LLaMA 3.2 (1B) with Traditional, LoRA, and QLoRA Approaches
-Welcome! This repository offers streamlined workflows and implementations for fine-tuning Meta's LLaMA 3.2 (1B) model. Here, we explore three fine-tuning techniques: Traditional, LoRA (Low-Rank Adaptation), and QLoRA (Quantized LoRA), each catering to different needs and resource constraints.
+Welcome! This repository offers streamlined workflows and implementations for fine-tuning Meta's LLaMA 3.2 (1B) model. Here, we explore three fine-tuning techniques: **Traditional**, **LoRA** (Low-Rank Adaptation), and **QLoRA** (Quantized LoRA), each catering to different needs and resource constraints.
 
-📌 Overview
-Traditional Fine-Tuning
-A comprehensive adjustment of the entire model, adjusting all layers for maximum customization at the cost of higher computational load and memory.
+---
 
-LoRA (Low-Rank Adaptation)
-A more efficient technique that only modifies low-rank matrices within certain layers, conserving memory and accelerating the fine-tuning process without sacrificing much accuracy.
+## 📌 Overview
 
-QLoRA (Quantized LoRA)
-A hybrid of quantization and LoRA, this technique achieves lower memory usage and faster processing by quantizing the model while applying low-rank adaptations. Ideal for resource-constrained environments.
+1. **Traditional Fine-Tuning**  
+   A comprehensive adjustment of the entire model, adjusting all layers for maximum customization at the cost of higher computational load and memory.
 
-🔄 Workflow
-Traditional Fine-Tuning
+2. **LoRA (Low-Rank Adaptation)**  
+   A more efficient technique that only modifies low-rank matrices within certain layers, conserving memory and accelerating the fine-tuning process without sacrificing much accuracy.
+
+3. **QLoRA (Quantized LoRA)**  
+   A hybrid of quantization and LoRA, this technique achieves lower memory usage and faster processing by quantizing the model while applying low-rank adaptations. Ideal for resource-constrained environments.
+
+---
+
+## 🔄 Workflow
+
+### Traditional Fine-Tuning
 Fine-tunes every parameter in the model, often yielding highly customized outputs.
 
-mermaid
-Copy code
+```mermaid
 graph TD;
     A[Input Data] --> B[Data Preprocessing];
     B --> C[Model Training];
@@ -36,15 +41,14 @@ graph TD;
 QLoRA Fine-Tuning
 Combines quantization with LoRA's efficient low-rank adaptation.
 
-
+mermaid
+Copy code
 graph TD;
     A[Input Data] --> B[Data Preprocessing];
     B --> C[Model Quantization];
     C --> D[LoRA Matrix Insertion];
     D --> E[Fine-Tuning Low-Rank Matrices];
     E --> F[Quantized Fine-Tuned Model Output];
-
-    
 🚀 Getting Started
 Each method has specific resource needs, so select the one that best fits your setup:
 
