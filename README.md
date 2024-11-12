@@ -79,9 +79,10 @@ Our experiments show the following trade-offs among the methods:
 | LoRA        | Moderate     | Fast           | Low-Rank Tuning Only   | ⭐⭐⭐⭐      |
 | QLoRA       | Low          | Fastest        | Low-Rank + Quantization| ⭐⭐⭐       |
 
-## 🤝 Contributing
+## 🤝 Reference Link
+1. Finetuning : https://drlee.io/step-by-step-guide-fine-tuning-metas-llama-3-2-1b-model-f1262eda36c8
 
-We welcome contributions! Please feel free to submit issues, open pull requests, or reach out with any questions.
+
 
 ## 📄 License
 
