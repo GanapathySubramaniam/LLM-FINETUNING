@@ -5,7 +5,7 @@ import torch
 
 class TestModel:
     def __init__(self, base_hf_model_name, finetuned_hf_model_name):
-        login(token='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')
+        login(token='hf_XXXX')
         torch.cuda.empty_cache()
         self.config = PeftConfig.from_pretrained(finetuned_hf_model_name)
         self.base_model = AutoModelForCausalLM.from_pretrained(base_hf_model_name)
@@ -46,12 +46,3 @@ class TestModel:
         generated_text = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
         return generated_text
 
-# if __name__ == "__main__":
-#     base_hf_model_name = 'meta-llama/Llama-3.2-1B'
-#     finetuned_hf_model_name = 'Ganapathy0112357/sample_model_123456'
-#     test_model_instance = TestModel(base_hf_model_name, finetuned_hf_model_name)
-
-#     test_prompt = "Write a short story about:"
-#     generated_output = test_model_instance.generate_text(test_prompt)
-#     print(f"Input: {test_prompt}")
-#     print(f"Generated Output: {generated_output}")
